@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="AURIX15 standalone Firebase push notification test">
+  <title>AURIX15 Push Test</title>
+  <style>
+    :root{color-scheme:dark;--bg:#101827;--panel:#182438;--gold:#e0b84f;--text:#f5f7fb;--muted:#aab6c8;--line:#34445d}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:linear-gradient(145deg,#101827,#17263b);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;display:grid;place-items:center;padding:22px}
+    main{width:min(100%,620px);background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 18px 50px #0005}
+    h1{margin:0 0 8px;color:var(--gold);font-size:1.7rem}p{line-height:1.8;color:var(--muted)}button{width:100%;border:0;border-radius:12px;padding:14px 16px;margin-top:12px;background:var(--gold);color:#172033;font-weight:800;font-size:1rem;cursor:pointer}button:disabled{opacity:.55;cursor:wait}
+    #status{margin-top:16px;padding:13px;border:1px solid var(--line);border-radius:12px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7}
+    #tokenBox{display:none;margin-top:18px}textarea{width:100%;min-height:120px;resize:vertical;background:#0c1421;color:#e9eef7;border:1px solid var(--line);border-radius:10px;padding:12px;direction:ltr;font-size:.78rem}
+    .hint{font-size:.88rem} .tag{display:inline-block;color:var(--gold);border:1px solid #8e7434;border-radius:99px;padding:4px 10px;font-size:.8rem}
+  </style>
+</head>
+<body>
+  <main>
+    <span class="tag">Firebase Cloud Messaging</span>
+    <h1>AURIX15 Push Test</h1>
+    <p>تطبيق مستقل لاختبار إشعارات الهاتف. اضغط الزر للسماح بالإشعارات وتسجيل هذا الجهاز.</p>
+    <button id="enableBtn">تفعيل الإشعارات وتسجيل الجهاز</button>
+    <div id="status" role="status" aria-live="polite">الحالة: لم يتم التسجيل بعد.</div>
+    <section id="tokenBox">
+      <p class="hint">رمز تسجيل هذا الجهاز. استخدمه في Firebase Console لإرسال رسالة اختبار، ولا تنشره أو تشاركه علنًا.</p>
+      <textarea id="token" readonly></textarea>
+      <button id="copyBtn" type="button">نسخ رمز الجهاز</button>
+    </section>
+    <p class="hint">ملحوظة: وصول إشعار الاختبار لا يضمن وحده جدولة التذكيرات المستقبلية؛ سنختبر الخلفية أولًا.</p>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
