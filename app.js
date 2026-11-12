@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/13.3.0/firebas
 import { getMessaging, getToken, isSupported, onMessage } from "https://www.gstatic.com/firebasejs/13.3.0/firebase-messaging.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAey4K4hOcuBvZea__WGPqv5Tahm8OEPpNQ",
+  apiKey: "AIzaSyAeyK4hOcuBvZea__WGPqv5Tahm8OEPpNQ",
   authDomain: "aurix15-push-test-9e9fe.firebaseapp.com",
   projectId: "aurix15-push-test-9e9fe",
   storageBucket: "aurix15-push-test-9e9fe.firebasestorage.app",

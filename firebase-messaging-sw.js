@@ -4,7 +4,7 @@ importScripts("https://www.gstatic.com/firebasejs/13.3.0/firebase-app-compat.js"
 importScripts("https://www.gstatic.com/firebasejs/13.3.0/firebase-messaging-compat.js");
 
 firebase.initializeApp({
-  apiKey: "AIzaSyAey4K4hOcuBvZea__WGPqv5Tahm8OEPpNQ",
+  apiKey: "AIzaSyAeyK4hOcuBvZea__WGPqv5Tahm8OEPpNQ",
   authDomain: "aurix15-push-test-9e9fe.firebaseapp.com",
   projectId: "aurix15-push-test-9e9fe",
   storageBucket: "aurix15-push-test-9e9fe.firebasestorage.app",
